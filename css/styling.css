@@ -55,3 +55,18 @@
 .footer a:hover {
     text-decoration: underline;
 }
+
+.contenedor {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    overflow: hidden; /* Oculta la parte de la imagen que sobresale del contenedor */
+    position: relative;
+}
+.imagen {
+    width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mitad-altura {
+    height: 50%; /* Altura del contenedor es la mitad de la altura original de la imagen */
+}
