@@ -1,0 +1,57 @@
+/* Estilo para la barra de navegación */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px; /* Aumenta el padding para más altura */
+    background-color: ffffff;
+}
+
+.navbar.bg-light {
+    background-color: white;
+}
+
+.navbar-brand img {
+    max-height: none; /* Elimina cualquier límite en la altura del logo */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    color: #555;
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    padding: 15px 20px; /* Aumenta el padding para más altura */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+/* Estilo para la imagen principal */
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el pie de página */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
