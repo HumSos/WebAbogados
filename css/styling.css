@@ -1,72 +1,119 @@
-/* Estilo para la barra de navegación */
-.navbar {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 20px; /* Aumenta el padding para más altura */
-    background-color: ffffff;
+/* Custom CSS */
+
+/* Import Roboto font from Google Fonts */
+body {
+    background-color: #f5f5f5; /* Gris suave para el fondo */
+    color: #333; /* Texto oscuro para mejor legibilidad */
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto para todo el cuerpo del texto */
 }
 
-.navbar.bg-light {
-    background-color: white;
+/* Navbar styling */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco para la barra de navegación */
+}
+
+.navbar-brand-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinear el logo al principio */
+    flex: 1; /* Permitir que tome espacio adicional */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem; /* Añadir un poco de espacio a la izquierda */
 }
 
 .navbar-brand img {
-    max-height: none; /* Elimina cualquier límite en la altura del logo */
+    width: 80px;
+    height: 80px;
 }
 
 .navbar-nav .nav-item .nav-link {
-    font-weight: 500;
-    color: #555;
-    font-size: 18px; /* Aumenta el tamaño del texto */
-    padding: 15px 20px; /* Aumenta el padding para más altura */
+    color: #333; /* Color oscuro para los enlaces */
+    padding: 10px 20px; /* Espaciado para los enlaces */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item .nav-link:hover {
-    color: #007bff;
+    background-color: #800020; /* Color vinotinto para la pestaña activa y al pasar el ratón */
+    color: #ffffff; /* Texto blanco para contraste */
 }
 
-/* Estilo para la imagen principal */
-.main-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para el pie de página */
+/* Footer styling */
 .footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 40px 0;
+    background-color: #4a4a4a; /* Fondo grisáceo para el pie de página */
+    padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
+    color: #ffffff; /* Texto blanco */
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-weight: 700; /* Negrita para el título del footer */
 }
 
 .footer p {
-    margin: 0;
-    padding: 5px;
+    margin: 5px 0;
 }
 
 .footer a {
-    color: #007bff;
+    color: #ffcccc; /* Color más claro para los enlaces en el pie de página */
     text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
 }
 
-.contenedor {
-    width: 100%; /* Ajusta el ancho según tus necesidades */
-    overflow: hidden; /* Oculta la parte de la imagen que sobresale del contenedor */
-    position: relative;
+/* Carousel styling */
+.carousel-inner img {
+    height: 500px; /* Ajusta la altura de las imágenes del carrusel según tus necesidades */
+    object-fit: cover;
 }
-.imagen {
-    width: 100%; /* La imagen ocupa el ancho completo del contenedor */
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0.5); /* Reduce el brillo para hacer las flechas más claras */
 }
-.mitad-altura {
-    height: 50%; /* Altura del contenedor es la mitad de la altura original de la imagen */
+
+/* Album styling */
+.album {
+    padding: 3rem 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+}
+
+.card-title {
+    color: #800020; /* Color vinotinto para los títulos */
+}
+
+.card-text {
+    color: #333; /* Color oscuro para el texto */
+}
+
+.card .btn {
+    background-color: #800020; /* Color vinotinto para los botones */
+    color: #ffffff; /* Texto blanco en los botones */
+    border: none;
+}
+
+.card .btn:hover {
+    background-color: #600015; /* Color vinotinto más oscuro al pasar el ratón */
+}
+
+/* Paleta de colores para los iconos */
+.icon-light {
+    color: #ffffff; /* Iconos claros */
+}
+
+.icon-dark {
+    color: #333333; /* Iconos oscuros */
 }
