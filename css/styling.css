@@ -117,3 +117,9 @@ body {
 .icon-dark {
     color: #333333; /* Iconos oscuros */
 }
+
+/* Estilo para el título centrado en vinotinto */
+.vinotinto {
+    color: #800000; /* Color vinotinto */
+    font-weight: bold;
+}
