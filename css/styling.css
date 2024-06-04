@@ -127,3 +127,7 @@ body {
 .der-marg {
     margin-left: 37px; /* Ajusta este valor según sea necesario */
 }
+
+.bold{
+    font-weight: bold;
+}
