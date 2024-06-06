@@ -131,3 +131,47 @@ body {
 .bold{
     font-weight: bold;
 }
+
+.text-vinotinto {
+    color: #800000; /* Color vinotinto */
+    font-weight: bold;
+}
+.profile-img {
+    width: 200px; /* Ajustar el tamaño del círculo */
+    height: 200px; /* Ajustar el tamaño del círculo */
+    object-fit: cover; /* Asegurar que la imagen cubra el contenedor */
+    border-radius: 50%; /* Hacer la imagen circular */
+    border: 2px solid #800000; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+    margin-right: 60px; /* Espacio entre la imagen y el texto */
+    margin-left: 8%; /* Empujar la imagen hacia la derecha */
+}
+.profile-img-2 {
+    width: 200px; /* Ajustar el tamaño del círculo */
+    height: 200px; /* Ajustar el tamaño del círculo */
+    object-fit: cover; /* Asegurar que la imagen cubra el contenedor */
+    border-radius: 50%; /* Hacer la imagen circular */
+    border: 2px solid #800000; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+    margin-right: 8%; /* Espacio entre la imagen y el texto */
+    margin-left: 60px; /* Empujar la imagen hacia la derecha */
+}
+.director-info {
+    display: flex; /* Utilizar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+.director-info-2 {
+    display: flex; /* Utilizar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 20px; /* Espacio superior */
+    justify-content: end;
+}
+
+.profile-pic{
+    width:90%;
+}
+
+.list-title{
+    margin-left: 20px;
+}
