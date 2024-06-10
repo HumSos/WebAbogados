@@ -176,3 +176,7 @@ body {
 .list-title{
     margin-left: 20px;
 }
+
+.card.border {
+    border: 2px solid #000; /* Cambia el color y el grosor del borde aquí */
+}
