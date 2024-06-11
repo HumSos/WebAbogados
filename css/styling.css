@@ -180,3 +180,41 @@ body {
 .card.border {
     border: 2px solid #000; /* Cambia el color y el grosor del borde aquí */
 }
+
+/* Botones de redes sociales */
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-buttons .btn {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    font-size: 24px; /* Aumenta el tamaño del icono */
+}
+
+.social-buttons .btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border: none;
+}
