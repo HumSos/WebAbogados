@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/styling.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-brand-wrapper">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/Logo.png" alt="Logo" style="width: 125px; height: 125px;"> <!-- Ajusta el ancho y alto del logo -->
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./about.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./inscripcion.html">Inscripción<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./juntaDirectiva.html">Junta Directiva</a>
+                    </li>
+                    <li class="nav-item " >
+                        <a class="nav-link" href="./coordinacion.html">Coordinación Académica</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./comisiones.html">Comisiones </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Formulario de Inscripción</h2>
+        <form action="../procesar_formulario.php" method="POST">
+            <h3>Datos Personales</h3>
+            <div class="form-group">
+                <label for="primer_apellido">1er Apellido</label>
+                <input type="text" class="form-control" id="primer_apellido" name="primer_apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="segundo_apellido">2do Apellido</label>
+                <input type="text" class="form-control" id="segundo_apellido" name="segundo_apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="primer_nombre">1er Nombre</label>
+                <input type="text" class="form-control" id="primer_nombre" name="primer_nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="segundo_nombre">2do Nombre</label>
+                <input type="text" class="form-control" id="segundo_nombre" name="segundo_nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="municipio">Municipio</label>
+                <input type="text" class="form-control" id="municipio" name="municipio" required>
+            </div>
+            <div class="form-group">
+                <label for="cedula">Cédula Nro</label>
+                <input type="text" class="form-control" id="cedula" name="cedula" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="lugar_nacimiento">Lugar de Nacimiento</label>
+                <input type="text" class="form-control" id="lugar_nacimiento" name="lugar_nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="pais_nacimiento">País de Nacimiento</label>
+                <input type="text" class="form-control" id="pais_nacimiento" name="pais_nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" class="form-control" id="edad" name="edad" required>
+            </div>
+            <div class="form-group">
+                <label for="estado_civil">Estado Civil</label>
+                <input type="text" class="form-control" id="estado_civil" name="estado_civil" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre_conyuge">Nombre del Cónyuge</label>
+                <input type="text" class="form-control" id="nombre_conyuge" name="nombre_conyuge">
+            </div>
+            <div class="form-group">
+                <label for="telefono_conyuge">Teléfono del Cónyuge</label>
+                <input type="tel" class="form-control" id="telefono_conyuge" name="telefono_conyuge">
+            </div>
+            <div class="form-group">
+                <label for="telefono_oficina">Teléfono de Oficina</label>
+                <input type="tel" class="form-control" id="telefono_oficina" name="telefono_oficina" required>
+            </div>
+            <div class="form-group">
+                <label for="domicilio_habitacion">Domicilio de Habitación</label>
+                <input type="text" class="form-control" id="domicilio_habitacion" name="domicilio_habitacion" required>
+            </div>
+            <div class="form-group">
+                <label for="domicilio_trabajo">Domicilio de Trabajo</label>
+                <input type="text" class="form-control" id="domicilio_trabajo" name="domicilio_trabajo" required>
+            </div>
+            <div class="form-group">
+                <label for="movil">Móvil</label>
+                <input type="tel" class="form-control" id="movil" name="movil" required>
+            </div>
+            <div class="form-group">
+                <label for="cargo">Cargo</label>
+                <input type="text" class="form-control" id="cargo" name="cargo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            
+            <h3>Datos de Inscripción</h3>
+            <div class="form-group">
+                <label for="nro_colegio">Nro Colegio Estado Bolívar</label>
+                <input type="text" class="form-control" id="nro_colegio" name="nro_colegio" required>
+            </div>
+            <div class="form-group">
+                <label for="tomo_colegio">Tomo Colegio Estado Bolívar</label>
+                <input type="text" class="form-control" id="tomo_colegio" name="tomo_colegio" required>
+            </div>
+            <div class="form-group">
+                <label for="folio_colegio">Folio Colegio Estado Bolívar</label>
+                <input type="text" class="form-control" id="folio_colegio" name="folio_colegio" required>
+            </div>
+            <div class="form-group">
+                <label for="inpreabogado">Inpreabogado</label>
+                <input type="text" class="form-control" id="inpreabogado" name="inpreabogado" required>
+            </div>
+
+            <h3>Datos Universitarios</h3>
+            <div class="form-group">
+                <label for="universidad">Egresado de Universidad</label>
+                <input type="text" class="form-control" id="universidad" name="universidad" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_graduacion">Fecha de Graduación</label>
+                <input type="date" class="form-control" id="fecha_graduacion" name="fecha_graduacion" required>
+            </div>
+            <div class="form-group">
+                <label for="anios_graduacion">Años de Graduación</label>
+                <input type="number" class="form-control" id="anios_graduacion" name="anios_graduacion" required>
+            </div>
+            <div class="form-group">
+                <label for="nro_libro">Nro. Libro</label>
+                <input type="text" class="form-control" id="nro_libro" name="nro_libro" required>
+            </div>
+            <div class="form-group">
+                <label for="nro_folio">Nro. Folio</label>
+                <input type="text" class="form-control" id="nro_folio" name="nro_folio" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" id="estado" name="estado" required>
+            </div>
+            <div class="form-group">
+                <label for="diplomado">Diplomado</label>
+                <input type="text" class="form-control" id="diplomado" name="diplomado">
+            </div>
+            <div class="form-group">
+                <label for="post_grado">Post Grado</label>
+                <input type="text" class="form-control" id="post_grado" name="post_grado">
+            </div>
+            <div class="form-group">
+                <label for="maestria">Maestría</label>
+                <input type="text" class="form-control" id="maestria" name="maestria">
+            </div>
+
+            <h3>Datos de Registro Público</h3>
+            <div class="form-group">
+                <label for="registro_publico_estado">Registro Público Estado</label>
+                <input type="text" class="form-control" id="registro_publico_estado" name="registro_publico_estado" required>
+            </div>
+            <div class="form-group">
+                <label for="bajo_el_nro">Bajo el Nro</label>
+                <input type="text" class="form-control" id="bajo_el_nro" name="bajo_el_nro" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_registro">Fecha de Registro</label>
+                <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" required>
+            </div>
+            <div class="form-group">
+                <label for="tomo_nro">Tomo Nro</label>
+                <input type="text" class="form-control" id="tomo_nro" name="tomo_nro" required>
+            </div>
+            <div class="form-group">
+                <label for="folio_nro">Folio Nro</label>
+                <input type="text" class="form-control" id="folio_nro" name="folio_nro" required>
+            </div>
+
+            <h3>Datos de Registro Otro Colegio de Abogados</h3>
+            <div class="form-group">
+                <label for="colegio_abg_inscrito">Colegio Abg Inscrito</label>
+                <input type="text" class="form-control" id="colegio_abg_inscrito" name="colegio_abg_inscrito" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_inscripcion">Fecha de Inscripción</label>
+                <input type="date" class="form-control" id="fecha_inscripcion" name="fecha_inscripcion" required>
+            </div>
+            <div class="form-group">
+                <label for="nro_tomo_1">Nro Tomo</label>
+                <input type="text" class="form-control" id="nro_tomo_1" name="nro_tomo_1" required>
+            </div>
+            <div class="form-group">
+                <label for="nro_folio_2">Nro Folio</label>
+                <input type="text" class="form-control" id="nro_folio_2" name="nro_folio_2" required>
+            </div>
+            <div class="form-group">
+                <label for="nro_colegio2">Nro del Colegio</label>
+                <input type="text" class="form-control" id="nro_colegio2" name="nro_colegio2" required>
+            </div>
+            <div class="form-group">
+                <label for="inpreabogado_nro">Inpreabogado Nro</label>
+                <input type="text" class="form-control" id="inpreabogado_nro" name="inpreabogado_nro" required>
+            </div>
+
+            <h3>Actividades Extracurriculares</h3>
+            <div class="form-group">
+                <label for="deportiva">Deportiva</label>
+                <input type="text" class="form-control" id="deportiva" name="deportiva">
+            </div>
+            <div class="form-group">
+                <label for="cultural">Cultural</label>
+                <input type="text" class="form-control" id="cultural" name="cultural">
+            </div>
+
+            <button type="submit" class="btn btn-primary" >Enviar</button>
+        </form>
+    </div>
+    <br>
+        <!-- Pie de página -->
+        <footer class="footer">
+            <div class="container">
+                <h4>Contactos:</h4>
+                <p>Teléfonos: +58 04143858042, +58 4148943157</p>
+                <p>Email: colegioabogadosbolivar@hotmail.com </p>
+                <p>Dirección: Avenida San Juan Bosco Edificio 05-04, piso 3, Oficina 3-B , Ciudad Bolívar, Venezuela</p>
+                <p><a href="#">Términos y Condiciones</a> | <a href="#">Política de Privacidad</a></p>
+            </div>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

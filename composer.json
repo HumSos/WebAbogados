@@ -1,0 +1,15 @@
+{
+    "name": "webabogados/formulario",
+    "description": "Formulario de inscripción para el Ilustre Colegio de Abogados del Estado Bolívar",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HumSos",
+            "email": "a00827227@tec.mx"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1"
+    }
+}
